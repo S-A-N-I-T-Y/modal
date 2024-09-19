@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="backdrop"></div>
+      <div class="modal-container" id="modal-container">
+        <div class="modal1" id="modal1">
+          <i class="fa-regular fa-circle-xmark" id="close"></i>
+          <p>
+            Dear user, welcome to Fasticore Technology, we are very delighted to
+            have you work with us.
+          </p>
+        </div>
+        <div class="modal2" id="modal2">
+          <i class="fa-regular fa-circle-xmark"></i>
+          <p>
+            Dear user, we are sad to hear your response, if you have any reason
+            relating to your answer, please do well to share with us. We hope to
+            hear from you soon.
+          </p>
+        </div>
+      </div>
+      <div class="action">
+        <h1>Would you love to work with us at Fasticore Technologies</h1>
+        <div class="action-buttons">
+          <button id="yes">Yes</button>
+          <button id="no">No</button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #abcdef;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.modal-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+  animation: slide ease 0.8s;
+  display: none;
+  cursor: pointer;
+}
+.modal1 {
+  width: 80%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 auto;
+  font-weight: bold;
+  box-shadow: 2px 3px 4px #b1abab -2px -3px 4px #b1abab;
+  animation: slide ease 0.8s;
+  margin-bottom: 20px;
+  margin-top: 25%;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+.modal2 {
+  width: 80%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 auto;
+  font-weight: bold;
+  box-shadow: 2px 3px 4px #b1abab -2px -3px 4px #b1abab;
+  animation: slide ease 0.8s;
+  margin-bottom: 20px;
+  margin-top: 25%;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+i {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+i:hover {
+  scale: 1.2;
+  transition: ease 0.5s;
+}
+.action {
+  width: 80%;
+  text-align: center;
+}
+.action h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  border: 1px solid #fff;
+  padding: 5px 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: ease 0.5s;
+  scale: 1;
+}
+button:hover {
+  background-color: #40f858;
+  border: 2px solid #fff;
+  color: #fff;
+  scale: 1.2;
+  cursor: pointer;
+}
+button:hover:nth-child(2) {
+  background-color: #fa2121;
+  border: 2px solid #fff;
+  color: #fff;
+  scale: 1.2;
+}
+
+@media (min-width: 640px) {
+  .modal-container {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    animation: slide ease 0.8s;
+    display: none;
+    cursor: pointer;
+  }
+  .modal1 {
+    max-width: 600px;
+    padding: 40px 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: bold;
+    box-shadow: 2px 3px 4px #b1abab -2px -3px 4px #b1abab;
+    margin-top: 30%;
+    animation: slide ease 0.8s;
+  }
+  .modal2 {
+    max-width: 600px;
+    padding: 40px 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: bold;
+    box-shadow: 2px 3px 4px #b1abab -2px -3px 4px #b1abab;
+    margin-bottom: 20px;
+    margin-top: 30%;
+    animation: slide ease 0.8s;
+  }
+  .action {
+    width: 100%;
+    text-align: center;
+  }
+  .action h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
